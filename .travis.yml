@@ -12,4 +12,5 @@ deploy:
   bucket: bacon.com
   region: eu-central-1
   glob: "*.html"
+  cache_control: "no-cache, no-store, must-revalidate, private"
   edge: true
