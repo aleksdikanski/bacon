@@ -1,0 +1,18 @@
+{
+    "Version": "2012-10-17",
+    "Id": "Policy1580242035529",
+    "Statement": [
+        {
+            "Sid": "Allow_Travis_Upload",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::403437536850:user/sys-travis-bacon-uploader"
+            },
+            "Action": "s3:PutObject",
+            "Resource": [
+                "arn:aws:s3:::bacon.com",
+                "arn:aws:s3:::bacon.com/*"
+            ]
+        }
+    ]
+}
